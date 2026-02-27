@@ -1,0 +1,27 @@
+package web
+
+templ Base() {
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>GOSAAS</title>
+			<link rel="icon" type="image/x-icon" href="/public/favicon.ico"/>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<link rel="stylesheet" href="/public/styles.css"/>
+			// HTMX
+			<script src="https://unpkg.com/htmx.org@1.9.9" defer></script>
+		</head>
+		<body class="antialiased">
+			{ children... }
+		</body>
+		<script>
+		document.body.addEventListener('htmx:beforeOnLoad', function (evt) {
+			if (evt.detail.xhr.status === 401) {
+				evt.detail.shouldSwap = true;
+				evt.detail.isError = false;
+			}
+		});
+		</script>
+	</html>
+}

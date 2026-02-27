@@ -1,0 +1,11 @@
+package sharedPages
+
+import "_compiled/modules/shared/web"
+
+templ Page() {
+	@web.Base() {
+		<div id="pageContent" hx-history-elt class="pt-14 md:pt-16">
+			{ children... }
+		</div>
+	}
+}

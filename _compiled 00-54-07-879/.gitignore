@@ -1,0 +1,9 @@
+node_modules
+.vscode
+tmp
+**/*.txt
+package-lock.json
+.env*
+*_templ.go
+Dockerfile
+loki-data

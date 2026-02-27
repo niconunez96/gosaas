@@ -1,0 +1,13 @@
+node_modules
+.vscode
+tmp
+.air.toml
+scripts
+.env
+.env_dev
+.golangci.yml
+compose.yml
+Makefile
+package.json
+package-lock.json
+tailwind.config.json
