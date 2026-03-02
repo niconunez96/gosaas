@@ -1,9 +1,9 @@
 package telemetry
 
 import (
+	"_compiled/modules/shared/infra/telemetry/otel"
 	"context"
 	"net/http"
-	"_compiled/modules/shared/infra/telemetry/otel"
 )
 
 var telemetry Telemetry

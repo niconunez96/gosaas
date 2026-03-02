@@ -9,7 +9,10 @@ import (
 	"github.com/a-h/templ"
 )
 
-func UnauthorizedMiddleware(unauthorizedPage templ.Component, forbiddenPage templ.Component) sharedHttp.Middleware {
+func UnauthorizedMiddleware(
+	unauthorizedPage templ.Component,
+	forbiddenPage templ.Component,
+) sharedHttp.Middleware {
 	return func(h http.Handler) http.Handler {
 		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 			responseWriter := sharedHttp.NewStatusCodeRecorder(w)

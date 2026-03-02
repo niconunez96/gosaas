@@ -6,6 +6,7 @@ require (
 	github.com/a-h/templ v0.3.1001
 	github.com/go-chi/chi/v5 v5.2.5
 	github.com/joho/godotenv v1.5.1
+	github.com/resend/resend-go/v2 v2.28.0
 	github.com/rs/zerolog v1.34.0
 	go.opentelemetry.io/contrib/bridges/otelzerolog v0.0.0-20240809024635-0c3fcdf3c470
 	go.opentelemetry.io/otel v1.40.0
